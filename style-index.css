@@ -1,26 +1,35 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
     height: 100px;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #621516;
+    color: #ffff;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
+    
 }
 
 .li-class {
     padding: 20px;
     margin: 5px;
+    font-size: 20%;
+
 }
 
 .li-class a {
-    color: black;
-    font-size: 20px;
+    color: #ffff;
+    font-size: 16px;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }
