@@ -4,107 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UKM_O Catur & Bridge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style_kegiatan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Montaga&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div class="container">
-    <header><b>UKM-O Catur &amp; Bridge</b></header>
-    <div class="navbar">
-        <ul>
-            <li class="li-class">
-                <a href="#">BERANDA</a>
-            </li>
-            <li class="li-class">
-                <a href="prestasi.html" target="_blank">PRESTASI</a>
-            </li>
-            <li class="li-class">
-                <a href="keanggotaan.html" target="_blank">KEANGGOTAAN</a>
-            </li>
-            <li class="li-class">
-                <a href="tentangkami.html" target="_blank">TENTANG&nbsp;KAMI</a>
-            </li>
-            <li class="li-class">
-                <a href="kegiatan.html" target="_blank">KEGIATAN</a>
-            </li>
-            <li class="li-class">
-                <a href="rekruitmen.html" target="_blank">REKRUITMEN</a>
-            </li>
-        </ul>
+    <div class="container">
+        <img src="LOGO_WEBSITE.png" alt="logo-ukm">
+        <header><b>UKM-O Catur &amp; Bridge</b></header>
+        <div class="navbar">
+            <ul>
+                <li class="li-class"><a href="#">BERANDA</a></li>
+                <li class="li-class"><a href="prestasi.html" target="_blank">PRESTASI</a></li>
+                <li class="li-class"><a href="keanggotaan.html" target="_blank">KEANGGOTAAN</a></li>
+                <li class="li-class"><a href="tentangkami.html" target="_blank">TENTANG&nbsp;KAMI</a></li>
+                <li class="li-class"><a href="kegiatan.html" target="_blank">KEGIATAN</a></li>
+                <li class="li-class"><a href="rekruitmen.html" target="_blank">REKRUITMEN</a></li>
+            </ul>
+        </div>
+
+        <div class="Judul">
+            <section>
+                <i class="fa-solid fa-house">
+                <p>Beranda  >  Kegiatan</p>
+                <h4>Jadwal <span class="warna-judul">Kegiatan & Event</span></h4>
+                <p>Informasi kegiatan rutin dan event terbaru UKM-O Catur &amp; Bridge.</p>
+                </i>
+            </section>
+        </div>
+
+        <div class="Isi_halaman_KEGIATAN">
+            <div class="baris-isi">
+
+                <!-- KOLOM KIRI -->
+                <div class="kolom-kiri">
+                    <div class="tabs">
+                        <button class="tab-btn active" onclick="bukaTab('jadwal', this)">
+                            <i class="fa-regular fa-calendar-days"></i> Jadwal Kegiatan
+                        </button>
+                        <button class="tab-btn" onclick="bukaTab('event', this)">
+                            <i class="fa-solid fa-trophy"></i> Event
+                        </button>
+                    </div>
+
+                    <div id="jadwal" class="tab-isi aktif">
+                        <div class="judul-jadwal">
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <div>
+                                <h3>Jadwal Kegiatan</h3>
+                                <p>kegiatan rutin yang dilakukan UKM-O Catur &amp; Bridge</p>
+                            </div>
+                        </div>
+                        <table class="table1">
+                            <thead>
+                                <tr>
+                                    <th>Kegiatan</th>
+                                    <th>Kategori</th>
+                                    <th>Hari</th>
+                                    <th>Jam</th>
+                                    <th>Lokasi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Latihan rutin</td>
+                                    <td>Catur</td>
+                                    <td>Selasa</td>
+                                    <td>19:10</td>
+                                    <td>G. Peternakan</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan rutin</td>
+                                    <td>Bridge</td>
+                                    <td>Selasa</td>
+                                    <td>19:10</td>
+                                    <td>G. Peternakan</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan rutin</td>
+                                    <td>Catur</td>
+                                    <td>Kamis</td>
+                                    <td>19:10</td>
+                                    <td>G. Peternakan</td>
+                                </tr>
+                                <tr>
+                                    <td>Latihan rutin</td>
+                                    <td>Bridge</td>
+                                    <td>Kamis</td>
+                                    <td>19:10</td>
+                                    <td>G. Peternakan</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="event" class="tab-isi">
+                        <p>Event akan segera hadir.</p>
+                    </div>
+                </div>
+
+                <!-- KOLOM KANAN -->
+                <div class="kolom-kanan">
+                    <div class="poster-event">
+                        <span class="label-event">EVENT TERDEKAT</span>
+                        <h3>Turnamen Catur</h3>
+                        <p>UKM Catur &amp; Bridge</p>
+                    </div>
+
+                    <div class="kal">
+                        <div class="kal-atas">
+                            <button type="button" id="kal-prev" aria-label="Bulan sebelumnya">&#8249;</button>
+                            <span id="kal-judul"></span>
+                            <button type="button" id="kal-next" aria-label="Bulan berikutnya">&#8250;</button>
+                        </div>
+                        <div class="kal-grid" id="kal-grid"></div>
+                        <!-- <div class="kal-legenda">
+                            <span><i class="titik titik-maroon"></i> Ada Kegiatan</span>
+                            <span><i class="titik titik-emas"></i> Hari Ini</span>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>Hubungi Kami</p>
+            <a href="https://www.instagram.com/catur_bridge.polije?dlrf=MWNldnlpMmQwY3oyeQ%3D%3D">@catur_bridge.polije</a>
+            <p>+62 8135 7103 038</p>
+            <p>Gedung Peternakan POLIJE</p>
+            <ul>
+                <li>Beranda</li>
+                <li>Prestasi</li>
+                <li>Keanggotaan</li>
+                <li>Tentang Kami</li>
+                <li>Kegiatan</li>
+                <li>Rekrutment</li>
+            </ul>
+            <p>THINK SMART, PLAY STATEGICALLY</p>
+            <p>&copy; UKM-O Catur dan Bridge POLIJE</p>
+        </footer>
     </div>
-    <div class="Judul">
-        <section>
-            <p>Beranda Kegiatan</p>
-            <h4>Jadwal Kegiatan</h4>
-            <p>Informasi kegiatan rutin dan event terbaru UKM-O Catur & Bridge.</p>
-        </section>
-    </div>
-    <div class="Isi halaman KEGIATAN">
-        <section>
-            <p>Jadwal Kegiatan</p>
-            <p>Event</p>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Kegiatan</th>
-                        <th>Kategori</th>
-                        <th>Hari</th>
-                        <th>Jam</th>
-                        <th>Lokasi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Latihan rutin</td>
-                        <td>Catur</td>
-                        <td>Selasa</td>
-                        <td>19.10</td>
-                        <td>G. Peternakan</td>
-                    </tr>
-                    <tr>
-                        <td>Latihan rutin</td>
-                        <td>Bridge</td>
-                        <td>Selasa</td>
-                        <td>19.10</td>
-                        <td>G. Peternakan</td>
-                    </tr>
-                    <tr>
-                        <td>Latihan rutin</td>
-                        <td>Catur</td>
-                        <td>Kamis</td>
-                        <td>19.10</td>
-                        <td>G. Peternakan</td>
-                    </tr>
-                    <tr>
-                        <td>Latihan rutin</td>
-                        <td>Bridge</td>
-                        <td>Kamis</td>
-                        <td>19.10</td>
-                        <td>G. Peternakan</td>
-                    </tr>
-                </tbody>
-            </table>
-            <label for="tanggal">
-                pilih tanggal
-            </label>
-            <input tipe="date" id="tanggal" name="tanggal">
-        </input>
-        </section>
-    </div>
-     <footer>
-        <p>Hubungi Kami</p>
-        <a href="https://www.instagram.com/catur_bridge.polije?dlrf=MWNldnlpMmQwY3oyeQ%3D%3D">@catur_bridge.polije</a>
-        <p>+62 8135 7103 038</p>
-        <p>Gedung Peternakan POLIJE</p>
-        <ul>
-            <li>Beranda</li>
-            <li>Prestasi</li>
-            <li>Keanggotaan</li>
-            <li>Tentang Kami</li>
-            <li>Kegiatan</li>
-            <li>Rekrutment</li>
-        </ul>
-        <p>THINK SMART, PLAY STATEGICALLY</p>
-        <p>&copy; UKM-O Catur dan Bridge POLIJE</p>
-    </footer>
+
+    <script>
+    function bukaTab(id, tombol) {
+        document.querySelectorAll('.tab-isi').forEach(function (el) {
+            el.classList.remove('aktif');
+        });
+        document.querySelectorAll('.tab-btn').forEach(function (el) {
+            el.classList.remove('active');
+        });
+        document.getElementById(id).classList.add('aktif');
+        tombol.classList.add('active');
+    }
+
+    var NAMA_BULAN = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+    var NAMA_HARI = ['Min','Sen','Sel','Rab','Kam','Jum','Sab'];
+
+    var tampil = new Date();
+    tampil.setDate(1);
+
+    function kunciTanggal(t, b, h) {
+        return t + '-' + String(b + 1).padStart(2, '0') + '-' + String(h).padStart(2, '0');
+    }
+
+    function gambarKalender() {
+        var t = tampil.getFullYear();
+        var b = tampil.getMonth();
+        var awal = new Date(t, b, 1).getDay();
+        var jumlah = new Date(t, b + 1, 0).getDate();
+        var bulanLalu = new Date(t, b, 0).getDate();
+        var hariIni = new Date();
+        var html = '';
+
+        NAMA_HARI.forEach(function (h) {
+            html += '<div class="kal-hari">' + h + '</div>';
+        });
+
+        var total = Math.ceil((awal + jumlah) / 7) * 7;
+        for (var i = 0; i < total; i++) {
+            var n = i - awal + 1;
+            var kelas = 'kal-sel';
+            var teks = n;
+
+            if (n < 1) {
+                teks = bulanLalu + n;
+                kelas += ' luar';
+            } else if (n > jumlah) {
+                teks = n - jumlah;
+                kelas += ' luar';
+            } else {
+                if (n === hariIni.getDate() && b === hariIni.getMonth() && t === hariIni.getFullYear()) {
+                    kelas += ' hari-ini';
+                }
+            }
+            html += '<div class="' + kelas + '">' + teks + '</div>';
+        }
+
+        document.getElementById('kal-grid').innerHTML = html;
+        document.getElementById('kal-judul').textContent = NAMA_BULAN[b] + ' ' + t;
+    }
+
+    document.getElementById('kal-prev').onclick = function () {
+        tampil.setMonth(tampil.getMonth() - 1);
+        gambarKalender();
+    };
+    document.getElementById('kal-next').onclick = function () {
+        tampil.setMonth(tampil.getMonth() + 1);
+        gambarKalender();
+    };
+
+    gambarKalender();
+    </script>
 </body>
 </html>
