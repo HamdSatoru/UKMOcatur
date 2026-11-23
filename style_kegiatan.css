@@ -1,26 +1,400 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .navbar {
     height: 100px;
+    width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: #621516;
+    color: #ffff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
+
+.logo-website {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 3%;
+}
+
+.logo-img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+}
+
 
 .navbar ul {
     display: flex;
     list-style: none;
+    margin-right: 5%;
+    
+}
+
+.ul-class a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.ul-class a.active {
+    background-color: #250203;
+    color: white;
+}
+
+.ul-class a:hover { 
+    background-color: black;
+    color: white;
 }
 
 .li-class {
     padding: 20px;
     margin: 5px;
+    margin-right: -10px;
+    
 }
 
 .li-class a {
-    color: black;
-    font-size: 20px;
+    color: #ffff;
+    font-size: 16px;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.container {
+    background: #F5EEE0;
+    padding: 0;
+}
+
+.Judul {
+    background-color: #250203;
+    height: 300px;
+    color: white;
+    padding: 20px 20px 20px 80px;
+    margin-bottom: 20px;
+    background-image:linear-gradient(110deg, #250203 0%, #250203 calc(100% - 720px), #4a0505 calc(100% - 720px), #4a0505 calc(100% - 590px), transparent),
+    url('jajar-genjang.png');
+    background-size: 100% 100%, auto 100%;
+    background-position: 0 0, right center;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Judul p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.Judul h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.warna-judul {
+    color: #e08a8a;
+}
+
+/* Layout dua kolom */
+.Isi_halaman_KEGIATAN {
+    padding: 20px 30px;
+}
+
+.baris-isi {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.kolom-kiri {
+    flex: 3;
+}
+
+.kolom-kanan {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Bar tab */
+.tabs {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    gap: 0;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background-color: #b3b3b3;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.tab-btn.active {
+    background-color: #250203;
+    color: white;
+}
+
+/* Isi tab */
+.tab-isi {
+    display: none;
+}
+
+.tab-isi.aktif {
+    display: block;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 300px;
+}
+
+/* Judul dalam kotak putih */
+.judul-jadwal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.judul-jadwal i {
+    font-size: 28px;
+}
+
+.judul-jadwal h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.judul-jadwal p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+}
+
+/* Tabel */
+.table1 {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.table1 th,
+.table1 td {
+    padding: 6px 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.table1 thead th {
+    background: #2a0a10;
+    color: #fff;
+    padding: 4px 10px;
+}
+
+.table1 tbody td {
+    background: #b3b3b3;
+    color: #111;
+    text-transform: lowercase;
+}
+
+.table1 th:first-child,
+.table1 td:first-child {
+    text-align: left;
+    border-radius: 8px 0 0 8px;
+}
+
+.table1 th:last-child,
+.table1 td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Poster event (sementara) */
+.poster-event {
+    background: #111;
+    color: white;
+    border-radius: 20px;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.label-event {
+    display: inline-block;
+    background: #f5b82e;
+    color: #111;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.poster-event h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.poster-event p {
+    font-size: 13px;
+}
+
+/* Kalender */
+.kal {
+    background: linear-gradient(180deg, #fdf1dc, #f8e6c8);
+    border-radius: 16px;
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kal-atas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.kal-atas span {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #5a0f14;
+}
+
+.kal-atas button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: #5a0f14;
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.kal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+
+.kal-hari {
+    background: #5a0f14;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.kal-sel {
+    position: relative;
+    background: #fdf8ee;
+    color: #2a0a10;
+    text-align: center;
+    font-size: 15px;
+    padding: 9px 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(90, 15, 20, 0.15);
+}
+
+.kal-sel.luar {
+    color: #c9b9a0;
+    background: #f6ecda;
+}
+
+.kal-sel.hari-ini {
+    background: #f2c265;
+    font-weight: 700;
+}
+
+.titik {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.titik-maroon { background: #5a0f14; }
+.titik-emas { background: #f2c265; }
+
+.titik-sel {
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    transform: translateX(-50%);
+}
+
+.kal-legenda {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 12px;
+    font-size: 11px;
+    color: #2a0a10;
+}
+
+.kal-legenda span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Footer */
+footer {
+    background: #2a0a10;
+    color: white;
+    padding: 30px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    color: #e5d3af;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 8px;
 }
