@@ -1,4 +1,6 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -23,4 +25,254 @@
     color: black;
     font-size: 20px;
     text-decoration: none;
+}
+
+.Judul {
+    background-color: #250203;
+    height: 250px;
+    color: white;
+    padding: 20px 20px 20px 80px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.Judul p{
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.Judul p:last-of-type:after{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+}
+.Judul h4{
+    font-size: 32px;
+    color: white;
+    margin-top: 20px;
+}
+.warna-judul {
+    color: #e08a8a;
+}
+.bg-filosofi {
+    width: 100%;
+    padding: 20px 7%;
+    background-color: #F5EFE1;
+}
+.filosofi-logo {
+    background-color: #62151677;
+    width: 100%;
+    min-height: 300px;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    margin: 20px auto;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.filosofi-logo img{
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+}
+.filosofi-logo img{
+    width: 23%;
+}
+.garis-filosofi{
+    content: "";
+    min-height: 300px;
+    background-color: black;
+    display: block;
+    width: 2px;
+    flex-shrink: 0;
+}
+.isi-filosofi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.isi-filosofi h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.isi-filosofi ul {
+    padding-left: 20px;
+}
+.isi-filosofi li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+.isi-filosofi p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 8px;
+    text-align: justify;
+}
+.bg-visimisi {
+     width: 100%;
+    padding: 20px 7%;
+    background-color: #F5EFE1;
+}
+.visi-misi { /*card*/
+    background-color: #62151677;
+    width: 100%;
+    min-height: 200px;
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    margin: 0px auto;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.visi-misi h3 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.garisjudul {
+    width: 95px;
+    height: 1px;
+    background-color: white;
+}
+.garis-visimisi {
+    content: "";
+    min-height: 150px;
+    background-color: black;
+    display: block;
+    width: 2px;
+    margin-left: -150px;
+}
+.isi-visimisi {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 25px;
+}
+.visi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.misi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.visi h4,
+.misi h4 {
+    font-size: 25px;
+    padding: 3px 12px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffff;
+}
+.visi p {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 0;
+}
+.misi ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.misi li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+.misi li span {
+    font-size: 22px;
+    min-width: 20px;
+    text-align: center;
+}
+.bg-sejarah {
+    width: 100%;
+    padding: 20px 7%;
+    background-color: #F5EFE1;
+}
+.sejarahukm-o {
+    background-color: #62151677;
+    width: 100%;
+    min-height: 200px;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    margin: 0px auto;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.sejarahukm-o h3{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.sejarahukm-o p{
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin: 0;
+}
+.garis-sejarah {
+    content: "";
+    min-height: 150px;
+    background-color: black;
+    display: block;
+    width: 2px;
+    margin-left: -350px;
+}
+.isi-sejarah {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 25px;
+}
+.isi-sejarah img{
+    height: 150px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.isi-sejarah img{
+    width: 23%;
 }
