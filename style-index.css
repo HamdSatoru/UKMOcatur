@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'montaga';
 }
 
 .container {
@@ -90,7 +91,7 @@ main{
 }
 
 .hero-label {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'poppins';
     font-size: 15px;
     color: #ffff;
 }
@@ -101,14 +102,17 @@ main{
     margin-left: 3%;
 }
 .hero-label2 {
-    font-family: 'Poppins';
     position: relative;
     top: 30px;
     margin-left: 3%;
     font-size: 50px;
     color: #fff;
 }
+.hero-label2 b{
+    font-family: 'poppins';
+}
 .hero-label2 span {
+    font-family: 'poppins';
     color : rgb(248, 122, 122);
 }
 .hero-description {
@@ -140,13 +144,14 @@ main{
 .tentangkami img{
     height: 250px;
     width: 400px;
-    margin-right: -10%;
+    margin-left: 25px;
 }
 .tentangkami-left {
     margin-top:20px;
     margin-left: 5%;
 }
-.tentangkami-left h4{
+.tentangkami-left b{
+    font-size: 36px;
     margin-left: 5%;
     font-family: 'Poppins';
 }
@@ -187,6 +192,10 @@ main{
     margin: 20px;
     border-radius: 20px;
 }
+.tentangkami-right h4{
+    font-family: 'poppins';
+    font-size: 24px;
+}
 .prestasi {
     width: auto;
     height: 310px;
@@ -198,13 +207,14 @@ main{
 }
 .prestasi h3 {
     font-family: 'Poppins';
+    font-size: 36px;
     margin-top: 20px;
     margin-left: 20px;
 }
 .bungkus{
     display: flex;
     justify-content:space-between ;
-    margin:50px;
+    margin:20px;
     gap: 20px;
 }
 .medali {
@@ -223,19 +233,16 @@ main{
     width: 50px;
     height: 42px;
 }
-.medali li{
+.medali b{
     font-family: 'Poppins';
 }
-.medali p{
-    font-family:'Times New Roman', Times, serif ;
-}
-.garis {
+.line{
     border-left: 2px solid;
     height: 230px;
     margin-right: 30px;
     margin-top: 55px;
 }
-.garis1 {
+.line1 {
     border-bottom: 2px solid #621516;
     width:150px;
     align-items: center;
@@ -261,23 +268,25 @@ main{
 .info {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: -20px;
 }
 
 .info h1 {
-    font-size: 45px;
-    margin: 0;
+    font-family: 'poppins';
+    font-size: 34px;
+    /* margin: 0; */
 }
 
 .info p {
-    font-size: 20px;
-    margin: 0;
+    font-size: 16px;
+    /* margin: 0; */
+    margin-top: -5px;
 }
 
 .icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -288,8 +297,8 @@ main{
 
 .anggota-aktif a {
     position: absolute;
-    right: -100px;
-    top: -70px;
+    right: -180px;
+    top: -100px;
 }
 .anggota-aktif a{
     position: relative;
@@ -309,7 +318,7 @@ main{
     display: flex;
     align-items: center;
 }
-.garis2 {
+.line2 {
     border-top: 2px solid #fff;
     width: 300px;
     margin-left: 40px;
@@ -317,8 +326,6 @@ main{
 .keanggotaan h4 {
     color: #ffff;
     font-family: 'Poppins';
-}
-.keanggotaan p{
 }
 .anggota {
     font-size: 48px;
@@ -328,8 +335,18 @@ main{
     color: #E5D3AF;
     font-family: 'Montaga';
     margin-left: 50px;
-    font-size: 24px;
-    
+    font-size: 20px;   
+}
+.bungkus3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+.koordinator img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .koordinator {
     border: 1px solid #E5D3AF;
@@ -341,6 +358,12 @@ main{
     flex-direction: column;
     text-align: center;
 }
+.pembina1 img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
 .pembina1 {
     border: 1px solid #E5D3AF;
     width: 220px;
@@ -350,6 +373,12 @@ main{
     justify-items: center;
     flex-direction: column;
     text-align: center; 
+}
+.pembina2 img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 .pembina2 {
     border: 1px solid #E5D3AF;
@@ -429,6 +458,9 @@ main{
 .jadwal2{
     margin-top: 35px;
 }
+.jadwal2 b{
+    font-family: 'poppins';
+}
 .jadwal2 h3 {
     color: #621516;
     font-size: 20px;
@@ -449,7 +481,7 @@ main{
     text-decoration: none;
 }
 .jadwal a {
-    width: 135px;
+    width: 150px;
     font-size: 12px;
     padding : 5px 13px;
 }
@@ -547,7 +579,7 @@ main{
 .text-kegiatan {
     flex-direction: column;
     align-content: center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .text-kegiatan h4{
     text-align: center;
@@ -558,7 +590,8 @@ main{
 .text-kegiatan p {
     text-align: right;
     color: #E5D3AF;
-    font-size: 15px;
+    font-size: 13px;
+    margin-right: 10px;
 }
 .fasilitas {
     width: auto;
@@ -573,7 +606,8 @@ main{
 }
 .judul-fasilitas{
     font-family: 'poppins';
-    margin-left: 20px;
+    font-size: 36px;
+    margin-left:50px;
     /* font-size: 36px; */
     font-weight: bold;
 }
@@ -626,10 +660,10 @@ main{
     color: #fff;
 }
 .promosi1 {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .promosi1 p{
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'poppins';
     font-weight: bold;
 }
@@ -649,7 +683,7 @@ main{
     font-weight: bold;
 }
 .strategi1 p{
-    text-align: justify;
+    text-align: center;
     width: 80%;
     margin-left: 25px;
 }
@@ -668,7 +702,7 @@ main{
     font-weight: bold;
 }
 .kompetisi1 p{
-    text-align: justify;
+    text-align: center;
     margin-left: 25px;
 }
 .relasi1 img{
@@ -683,12 +717,12 @@ main{
     font-weight: bold;
 }
 .relasi1 p{
-    text-align: justify;
+    text-align: center;
     width: 80%;
     margin-left: 25px;
 }
 .daftar {
-    height: 126px;
+    height: 50px;
     text-align: center;
     padding-top: 20px;
 }
@@ -709,4 +743,104 @@ main{
     width: 135px;
     font-size: 12px;
     padding : 5px 13px;
+}
+/* footer */
+.latarFooter {
+    background-color: #621516;
+    height: 280px;
+    width: 100%;
+    margin-top: 10%;
+    color: #ffff;
+}
+
+.topFooter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 0;
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 40px;
+}
+
+.medsos {
+    flex-direction: column;
+    align-content: flex-start;
+    width: 370px;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.row5 {
+    flex-direction: column;
+    align-content: flex-start;
+    list-style: none;
+    text-decoration: none;
+    width: 370px;
+    margin-top: 3%;
+}
+
+.rigthFooter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2%;
+    margin-right: 3%;
+    gap: 4px;
+}
+
+
+/* edit text footer */
+.medsos p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.medsos a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffff;
+    line-height: 2;
+    height: auto;
+}
+
+.row5 a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.3;
+    height: auto;
+}
+
+.text15 {
+    text-align: center;
+}
+
+.text16 {
+    font-size:20px;
+    width: 375px;
+    text-align: center;
+}
+
+
+.garis2 {
+    width: 530px;
+    border-top:2px solid #F5EFE1;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.garis1 {
+    width: 600px;
+    border-top:2px solid #F5EFE1;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rigthFooter img{
+    width: 600px;
+    height: auto;
 }
