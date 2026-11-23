@@ -98,7 +98,7 @@
 }
 
 .Judul p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'montaga';
     font-size: 15px;
     margin-top: 30px;
 }
@@ -203,6 +203,16 @@
 .judul-jadwal p {
     font-family: 'Poppins', sans-serif;
     font-size: 9px;
+}
+
+/* Area halaman kegiatan */
+.Isi_halaman_KEGIATAN {
+    padding: 20px 30px 100px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-image: url('Hiasan.png');
+    
 }
 
 /* Tabel */
@@ -382,7 +392,7 @@
     background-color: #621516;
     height: 280px;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 0%;
     color: #ffff;
 }
 
