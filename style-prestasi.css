@@ -87,8 +87,8 @@
 }
 .catur {
     background-color: #621516;
-    width: 640;
-    height: 120;
+    width: 640px;
+    height: 120px;
     color:#fff;
     border-radius: 20px;
     font-size: 64px;
@@ -150,6 +150,7 @@
     display: grid;
     gap: 15px;
     align-content: start;
+    
    
 }
 .judul_prestasi3 {
@@ -264,6 +265,7 @@
     display: grid;
     gap: 15px;
     align-content: start;
+    
    
 }
 .kolom2 .judul_prestasi3 {
