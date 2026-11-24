@@ -147,11 +147,10 @@
     display: flex;
 }
 .kolom1 {
-    flex-direction: column;
-    display:flex;
+    display: grid;
     gap: 15px;
-    flex-wrap: nowrap;
-    margin-left: 5%;
+    align-content: start;
+   
 }
 .judul_prestasi3 {
     background-color: #621516;
@@ -195,7 +194,8 @@
     justify-content: space-between
 }
 .konten {
-    display: flex;
+    display: grid;
+    grid-template-columns: 640px 640px;
     justify-content: space-evenly;
 }
 
@@ -261,11 +261,10 @@
     display: flex;
 }
 .kolom2 {
-    flex-direction: column;
-    display:flex;
+    display: grid;
     gap: 15px;
-    flex-wrap: nowrap;
-    margin-right: 5%;
+    align-content: start;
+   
 }
 .kolom2 .judul_prestasi3 {
     background-color: #F5D7A1;
