@@ -1,14 +1,14 @@
 /* edit header */
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'montaga';
 }
 
 .navbar {
     height: 100px;
-    width:100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,21 +77,27 @@
 }
 
 /* edit contain */
+.atas{
+    background-color: #250203;
+}
+
 .latar {
     background-color:#F5EFE1;
 }
 
 .title {
     color: #ffff;
-    background-color: #250203;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 1440px;
     height: 310px;
     align-items: flex-start;
     columns: 3;
 }
 
+.tengah {
+    background-color: #F5EFE1;
+}
 
 .row1 {
     display: flex;
@@ -109,6 +115,7 @@
     margin-top: 5%;
     row-gap: 100%;
     align-items:flex-end;
+    max-width: 1440px;
 }
 
 .leftContain {
@@ -123,7 +130,8 @@
 }
 
 .daftarAlur {
-    width: 375px;
+    min-width: 375px;
+    width: auto;
     height: 88px;
     background-color: #ffff;
     border-radius: 15px;
@@ -226,6 +234,7 @@
     font-size:20px ;
     color: #621516;
     font-weight: bold;
+    font-family: 'poppins';
 }
 
 .daftarAlur p {
@@ -276,6 +285,7 @@
     margin-left: 8.5%;
     position: relative;
     z-index: 1;
+    object-fit: cover;
 }
 
 .qr h2 {
@@ -297,13 +307,18 @@
     width: 140px;
     height: 100px;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 /* footer */
+.bawah {
+    background-color: #621516;
+}
+
 .latarFooter {
     background-color: #621516;
     height: 280px;
-    width: 100%;
+    max-width: 1440px;
     margin-top: 10%;
     color: #ffff;
 }
@@ -398,4 +413,397 @@
 .rigthFooter img{
     width: 600px;
     height: auto;
+}
+
+/* ==========================================================
+   MEDIA QUERY - letakkan di paling bawah file CSS
+   ========================================================== */
+
+/* ---------- Tablet landscape / laptop kecil (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+
+    /* navbar */
+    .navbar ul {
+        margin-right: 3%;
+    }
+
+    .li-class {
+        padding: 10px;
+        margin-right: 0;
+    }
+
+    .li-class a {
+        font-size: 14px;
+    }
+
+    /* judul */
+    .title {
+        columns: 1;
+        padding: 0 5%;
+    }
+
+    .row1 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .row1 p {
+        margin-left: 0;
+    }
+
+    .text2 {
+        font-size: 38px;
+        width: 90%;
+        text-align: left;
+    }
+
+    /* isi utama */
+    .contain {
+        padding: 0 3%;
+        gap: 20px;
+    }
+
+    .daftarAlur {
+        min-width: 300px;
+    }
+
+    .line1, .line3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .line2 {
+        height: 650px;
+    }
+
+    .qr {
+        width: 450px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .qr h3 {
+        width: 100%;
+        height: 100px;
+        font-size: 28px;
+    }
+
+    .qr img {
+        width: 82%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin-left: 9%;
+    }
+
+    .qr h2 {
+        width: 70%;
+        height: 70px;
+        margin-left: 15%;
+        font-size: 20px;
+    }
+
+    .penghubung {
+        height: 500px;
+    }
+
+    /* footer */
+    .medsos,
+    .row5 {
+        width: 30%;
+    }
+
+    .garis1,
+    .garis2 {
+        width: 90%;
+    }
+
+    .rigthFooter img {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+/* ---------- Tablet portrait (<= 768px) ---------- */
+@media (max-width: 768px) {
+
+    /* navbar */
+    .navbar {
+        height: 80px;
+    }
+
+    .logo-website {
+        margin-left: 2%;
+        font-size: 14px;
+    }
+
+    .logo-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .navbar ul {
+        margin-right: 2%;
+    }
+
+    .li-class {
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .li-class a {
+        font-size: 13px;
+    }
+
+    .ul-class a {
+        padding: 3px 6px;
+    }
+
+    /* judul */
+    .title {
+        height: auto;
+        padding: 40px 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row1 {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .row1 p {
+        width: auto;
+    }
+
+    .text1 {
+        margin-left: 0;
+    }
+
+    .text2 {
+        font-size: 32px;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* isi utama jadi vertikal */
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+        row-gap: 40px;
+    }
+
+    .line2 {
+        display: none;
+    }
+
+    .leftContain {
+        width: 92%;
+        align-items: center;
+    }
+
+    .leftContain h3 {
+        margin-left: 0;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .alur {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .daftarAlur {
+        min-width: 0;
+        width: 100%;
+        height: auto;
+        min-height: 88px;
+        padding: 10px;
+    }
+
+    .nomor p {
+        margin-left: 0;
+    }
+
+    .penghubung {
+        height: 450px;
+        margin-left: 0;
+    }
+
+    .line1, .line3 {
+        width: 80%;
+        margin-top: 5%;
+    }
+
+    .rigthContain {
+        width: 92%;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .qr {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    /* footer */
+    .latarFooter {
+        height: auto;
+        margin-top: 8%;
+        padding: 30px 0;
+    }
+
+    .topFooter,
+    .bottomFooter {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .medsos,
+    .row5 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .rigthFooter {
+        margin: 0 auto;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rigthFooter img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .garis1,
+    .garis2 {
+        width: 90%;
+    }
+
+    .text16 {
+        width: 90%;
+    }
+}
+
+/* ---------- Smartphone (<= 480px) ---------- */
+@media (max-width: 480px) {
+
+    /* navbar */
+    .navbar {
+        height: 70px;
+    }
+
+    .logo-website {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar ul {
+        margin-right: 1%;
+    }
+
+    .li-class {
+        padding: 3px;
+        margin: 0;
+    }
+
+    .li-class a {
+        font-size: 11px;
+    }
+
+    .ul-class a {
+        padding: 2px 5px;
+        border-radius: 8px;
+    }
+
+    /* judul */
+    .title {
+        padding: 30px 5%;
+    }
+
+    .text2 {
+        font-size: 26px;
+    }
+
+    .row1 img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .row1 p {
+        font-size: 11px;
+    }
+
+    /* alur */
+    .leftContain h3 {
+        font-size: 18px;
+    }
+
+    .daftarAlur li {
+        font-size: 16px;
+    }
+
+    .daftarAlur p {
+        font-size: 12px;
+    }
+
+    .nomor p {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .penghubung {
+        height: 380px;
+    }
+
+    .alur {
+        gap: 12px;
+    }
+
+    /* qr */
+    .qr h3 {
+        height: 80px;
+        font-size: 22px;
+    }
+
+    .qr img {
+        width: 84%;
+        margin-left: 8%;
+    }
+
+    .qr h2 {
+        width: 80%;
+        height: 55px;
+        font-size: 16px;
+        margin-left: 10%;
+    }
+
+    /* footer */
+    .medsos p,
+    .medsos a {
+        font-size: 16px;
+    }
+
+    .row5 a {
+        font-size: 14px;
+    }
+
+    .text16 {
+        font-size: 16px;
+    }
 }
