@@ -9,30 +9,41 @@
     <link rel="stylesheet" href="style_kegiatan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&family=Montaga&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montaga'>
 </head>
 <body>
+    <div class="navbar">
+         <header class="logo-website">
+            <img src="LOGO_WEBSITE.png" class="logo-img"/>
+            <b>UKM-O<br>Catur &amp; Bridge</b>
+         </header>
+        <ul class="ul-class">
+            <li class="li-class">
+                <a href="index.html" target="_blank">BERANDA</a>
+            </li>
+            <li class="li-class">
+                <a href="prestasi.html" target="_blank">PRESTASI</a>
+            </li>
+            <li class="li-class">
+                <a href="keanggotaan.html" target="_blank" >KEANGGOTAAN</a>
+            </li>
+            <li class="li-class">
+                <a href="tentangkami.html" target="_blank">TENTANG&nbsp;KAMI</a>
+            </li>
+            <li class="li-class">
+                <a href="#">KEGIATAN</a>
+            </li>
+            <li class="li-class">
+                <a href="rekruitmen.html" target="_blank">REKRUITMEN</a>
+            </li>
+        </ul>
+    </div>
     <div class="container">
-        <img src="LOGO_WEBSITE.png" alt="logo-ukm">
-        <header><b>UKM-O Catur &amp; Bridge</b></header>
-        <div class="navbar">
-            <ul>
-                <li class="li-class"><a href="#">BERANDA</a></li>
-                <li class="li-class"><a href="prestasi.html" target="_blank">PRESTASI</a></li>
-                <li class="li-class"><a href="keanggotaan.html" target="_blank">KEANGGOTAAN</a></li>
-                <li class="li-class"><a href="tentangkami.html" target="_blank">TENTANG&nbsp;KAMI</a></li>
-                <li class="li-class"><a href="kegiatan.html" target="_blank">KEGIATAN</a></li>
-                <li class="li-class"><a href="rekruitmen.html" target="_blank">REKRUITMEN</a></li>
-            </ul>
-        </div>
-
         <div class="Judul">
             <section>
-                <i class="fa-solid fa-house">
-                <p>Beranda  >  Kegiatan</p>
+                <p><i class="fa-solid fa-house"></i> Beranda  >  Kegiatan</p>
                 <h4>Jadwal <span class="warna-judul">Kegiatan & Event</span></h4>
                 <p>Informasi kegiatan rutin dan event terbaru UKM-O Catur &amp; Bridge.</p>
-                </i>
             </section>
         </div>
 
@@ -131,93 +142,48 @@
             </div>
         </div>
 
-        <footer>
-            <p>Hubungi Kami</p>
-            <a href="https://www.instagram.com/catur_bridge.polije?dlrf=MWNldnlpMmQwY3oyeQ%3D%3D">@catur_bridge.polije</a>
-            <p>+62 8135 7103 038</p>
-            <p>Gedung Peternakan POLIJE</p>
-            <ul>
-                <li>Beranda</li>
-                <li>Prestasi</li>
-                <li>Keanggotaan</li>
-                <li>Tentang Kami</li>
-                <li>Kegiatan</li>
-                <li>Rekrutment</li>
+    <footer class="latarFooter">
+        <div class="topFooter">
+            <div class="medsos">
+                <p>Hubungi Kami</p>
+                <a href="https://www.instagram.com/catur_bridge.polije?dlrf=MWNldnlpMmQwY3oyeQ%3D%3D">@catur_bridge.polije</a>
+                <p>+62 8135 7103 038</p>
+                <p>Gedung Peternakan POLIJE</p>
+            </div>
+            <ul class="row5">
+                <li><b>MENU</b></li>
+                <li>
+                    <a href="index.html" target="_blank">Beranda</a>
+                </li>
+                <li>
+                    <a href="prestasi.html" target="_blank">Prestasi</a>
+                </li>
+                <li>
+                    <a href="keanggotaan.html" target="_blank">Keanggotaan</a>
+                </li>
+                <li>
+                    <a href="tentangkami.html" target="_blank">Tentang Kami</a>
+                </li>
+                <li>
+                    <a href="#">Kegiatan</a>
+                </li>
+                <li>
+                    <a href="rekruitmen.html" target="_blank">Rekrutment</a>
+                </li>
             </ul>
-            <p>THINK SMART, PLAY STATEGICALLY</p>
-            <p>&copy; UKM-O Catur dan Bridge POLIJE</p>
-        </footer>
+            <div class="rigthFooter">
+                <img src="ICON_BIDAK-removebg-preview.png">
+                <div class="garis1"></div>
+                <p class="text15">THINK SMART, PLAY STATEGICALLY</p>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div class="garis2"></div>
+            <p class="text16">&copy; UKM-O Catur dan Bridge POLIJE</p>
+            <div class="garis2"></div>
+        </div>
+    </footer>
     </div>
-
-    <script>
-    function bukaTab(id, tombol) {
-        document.querySelectorAll('.tab-isi').forEach(function (el) {
-            el.classList.remove('aktif');
-        });
-        document.querySelectorAll('.tab-btn').forEach(function (el) {
-            el.classList.remove('active');
-        });
-        document.getElementById(id).classList.add('aktif');
-        tombol.classList.add('active');
-    }
-
-    var NAMA_BULAN = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
-    var NAMA_HARI = ['Min','Sen','Sel','Rab','Kam','Jum','Sab'];
-
-    var tampil = new Date();
-    tampil.setDate(1);
-
-    function kunciTanggal(t, b, h) {
-        return t + '-' + String(b + 1).padStart(2, '0') + '-' + String(h).padStart(2, '0');
-    }
-
-    function gambarKalender() {
-        var t = tampil.getFullYear();
-        var b = tampil.getMonth();
-        var awal = new Date(t, b, 1).getDay();
-        var jumlah = new Date(t, b + 1, 0).getDate();
-        var bulanLalu = new Date(t, b, 0).getDate();
-        var hariIni = new Date();
-        var html = '';
-
-        NAMA_HARI.forEach(function (h) {
-            html += '<div class="kal-hari">' + h + '</div>';
-        });
-
-        var total = Math.ceil((awal + jumlah) / 7) * 7;
-        for (var i = 0; i < total; i++) {
-            var n = i - awal + 1;
-            var kelas = 'kal-sel';
-            var teks = n;
-
-            if (n < 1) {
-                teks = bulanLalu + n;
-                kelas += ' luar';
-            } else if (n > jumlah) {
-                teks = n - jumlah;
-                kelas += ' luar';
-            } else {
-                if (n === hariIni.getDate() && b === hariIni.getMonth() && t === hariIni.getFullYear()) {
-                    kelas += ' hari-ini';
-                }
-            }
-            html += '<div class="' + kelas + '">' + teks + '</div>';
-        }
-
-        document.getElementById('kal-grid').innerHTML = html;
-        document.getElementById('kal-judul').textContent = NAMA_BULAN[b] + ' ' + t;
-    }
-
-    document.getElementById('kal-prev').onclick = function () {
-        tampil.setMonth(tampil.getMonth() - 1);
-        gambarKalender();
-    };
-    document.getElementById('kal-next').onclick = function () {
-        tampil.setMonth(tampil.getMonth() + 1);
-        gambarKalender();
-    };
-
-    gambarKalender();
-    </script>
+    <script src="kalender.js"></script>
 </body>
 </html>
