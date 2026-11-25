@@ -81,14 +81,16 @@
 
 .judul {
     background-color: #250203;
-    width: 100%;
-    height: 310px;
     color: #fff;
+
+}
+.judul_teks {
+    max-width: 1440px;
 }
 .catur {
     background-color: #621516;
-    width: 640;
-    height: 120;
+    max-width: 640px;
+    height: 120px;
     color:#fff;
     border-radius: 20px;
     font-size: 64px;
@@ -96,6 +98,7 @@
     align-items: center;
     display: flex;
     margin-top: 10%;
+    
 }
 .prestasi_catur {
     background-color: #fff;
@@ -147,11 +150,11 @@
     display: flex;
 }
 .kolom1 {
-    flex-direction: column;
-    display:flex;
+    display: grid;
     gap: 15px;
-    flex-wrap: nowrap;
-    margin-left: 5%;
+    align-content: start;
+    
+   
 }
 .judul_prestasi3 {
     background-color: #621516;
@@ -195,8 +198,10 @@
     justify-content: space-between
 }
 .konten {
-    display: flex;
+    display: grid;
+    grid-template-columns: 640px 640px;
     justify-content: space-evenly;
+    
 }
 
 .bridge {
@@ -261,11 +266,11 @@
     display: flex;
 }
 .kolom2 {
-    flex-direction: column;
-    display:flex;
+    display: grid;
     gap: 15px;
-    flex-wrap: nowrap;
-    margin-right: 5%;
+    align-content: start;
+    
+   
 }
 .kolom2 .judul_prestasi3 {
     background-color: #F5D7A1;
@@ -435,4 +440,218 @@
 .rigthFooter img{
     width: 600px;
     height: auto;
+}
+.rigthFooter img{
+    width: 600px;
+    height: auto;
+}
+
+/* LAPTOP KECIL (1400px ke bawah) */
+@media (max-width: 1400px) {
+
+    .judul_teks {
+        width: 90%;
+    }
+
+    .konten {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .kolom1,
+    .kolom2 {
+        margin: 0;
+    }
+
+    .catur,
+    .bridge {
+        width: 100%;
+        max-width: 100%;
+        font-size: 48px;
+    }
+
+    .prestasi_catur,
+    .prestasi_bridge {
+        width: 100%;
+    }
+
+    .topFooter {
+        flex-wrap: wrap;
+    }
+
+    .garis1,
+    .rigthFooter img {
+        width: 100%;
+    }
+
+    .garis2 {
+        width: 25%;
+    }
+}
+
+/* TABLET (1000px ke bawah) */
+@media (max-width: 1000px) {
+
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .li-class {
+        padding: 8px;
+        margin: 0;
+    }
+
+    .judul {
+        width: 100%;
+        height: auto;
+        padding: 30px 5%;
+    }
+
+    .judul_teks {
+        width: 100%;
+    }
+
+    .judul_utama {
+        font-size: 36px;
+    }
+
+    .deskripsi {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .konten {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .catur,
+    .bridge {
+        height: 90px;
+        font-size: 44px;
+        margin-top: 20px;
+    }
+
+    .prestasi_catur img,
+    .prestasi_bridge img {
+        width: 200px;
+    }
+
+    .judul_prestasi,
+    .judul_prestasi2,
+    .judul_prestasi3,
+    .judul_prestasi4,
+    .judul_prestasi5,
+    .kolom2 .judul_prestasi1,
+    .kolom2 .judul_prestasi2,
+    .kolom2 .judul_prestasi3,
+    .kolom2 .judul_prestasi4 {
+        width: 100%;
+    }
+
+    .keteranganlomba,
+    .kolom2 .keteranganlomba {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .latarFooter {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .topFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medsos,
+    .row5,
+    .rigthFooter {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bottomFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .garis2,
+    .text16 {
+        width: 90%;
+    }
+}
+
+/* HP (600px ke bawah) */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        position: static;
+    }
+
+    .logo-website {
+        margin-left: 0;
+    }
+
+    .judul_utama {
+        font-size: 28px;
+    }
+
+    .deskripsi {
+        font-size: 13px;
+    }
+
+    .catur,
+    .bridge {
+        height: 70px;
+        font-size: 36px;
+    }
+
+    .prestasi_catur,
+    .prestasi_bridge {
+        height: auto;
+        min-height: 220px;
+    }
+
+    .prestasi_catur img,
+    .prestasi_bridge img {
+        width: 110px;
+        height: auto;
+    }
+
+    .keteranganCatur,
+    .keteranganBridge {
+        padding: 10px;
+    }
+
+    .judul_prestasi,
+    .judul_prestasi2,
+    .judul_prestasi3,
+    .judul_prestasi4,
+    .judul_prestasi5,
+    .kolom2 .judul_prestasi1,
+    .kolom2 .judul_prestasi2,
+    .kolom2 .judul_prestasi3,
+    .kolom2 .judul_prestasi4 {
+        height: 60px;
+        font-size: 13px;
+    }
+
+    .keteranganlomba,
+    .kolom2 .keteranganlomba {
+        margin-top: 15px;
+        font-size: 13px;
+    }
 }
