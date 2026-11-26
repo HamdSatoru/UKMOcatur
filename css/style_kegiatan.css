@@ -6,9 +6,8 @@
     font-family: 'montaga';
 }
 
-.container {
-    background: #F5EEE0;
-    padding: 0;
+body{
+    background-color:  #F5EEE0;
 }
 
 .Judul {
@@ -43,6 +42,7 @@
 
 .warna-judul {
     color: #e08a8a;
+    font-family: 'poppins';
 }
 
 /* Layout dua kolom */
