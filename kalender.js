@@ -15,10 +15,6 @@
     var tampil = new Date();
     tampil.setDate(1);
 
-    function kunciTanggal(t, b, h) {
-        return t + '-' + String(b + 1).padStart(2, '0') + '-' + String(h).padStart(2, '0');
-    }
-
     function gambarKalender() {
         var t = tampil.getFullYear();
         var b = tampil.getMonth();
