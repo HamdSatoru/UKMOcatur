@@ -4,90 +4,27 @@
     margin: 0;
     padding: 0;
 }
-
-.navbar {
-    height: 100px;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #621516;
-    color: #ffff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
+body {
+    background-color: #F5EFE1;
+    width:  100%;
 }
-
-.logo-website {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 3%;
-}
-
-.logo-img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    padding: 0;
-    margin: 0;
-}
-
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin-right: 5%;
-    
-}
-
-.ul-class a {
-    text-decoration: none;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.ul-class a.active {
-    background-color: #250203;
-    color: white;
-}
-
-.ul-class a:hover { 
-    background-color: black;
-    color: white;
-}
-
-.li-class {
-    padding: 20px;
-    margin: 5px;
-    margin-right: -10px;
-    
-}
-
-.li-class a {
-    color: #ffff;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
+/* section */
 .Judul {
     background-color: #250203;
     height: 250px;
     color: white;
     padding: 20px 20px 20px 80px;
-    margin-bottom: 0px;
     font-family: 'Poppins', sans-serif;
+}
+.top-judul {
+    display: flex;
 }
 .Judul p{
     font-size: 12px;
     color: white;
     margin-top: 20px;
     line-height: 1.6;
-    font-family: 'montaga';
+    font-family: 'poppins', sans-serif;
 }
 .Judul p:last-of-type:after{
     content: "";
@@ -106,6 +43,7 @@
 .warna-judul {
     color: #e08a8a;
 }
+/*filosofi logo  */
 .bg-filosofi {
     width: 100%;
     padding: 20px 7%;
@@ -142,7 +80,6 @@
     flex-shrink: 0;
 }
 .isi-filosofi {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -168,6 +105,7 @@
     text-align: justify;
     font-family: 'montaga';
 }
+/*visi misi  */
 .bg-visimisi {
     width: 100%;
     padding: 20px 7%;
@@ -208,7 +146,7 @@
 .garisjudul {
     width: 95px;
     height: 1px;
-    background-color: white;
+    background-color: rgb(255, 254, 254);
 }
 .garis-visimisi {
     content: "";
@@ -225,18 +163,14 @@
     width: 100%;
     gap: 25px;
 }
-.visi {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+.visi,
 .misi {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .visi h4,
 .misi h4 {
     font-size: 25px;
@@ -244,7 +178,7 @@
     border-radius: 30px;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
-    background-color: #ffff;
+    background-color: #ffffffc5;
 }
 .visi p {
     display: block;
@@ -260,7 +194,6 @@
     list-style: none;
     padding: 0;
     margin: 0;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -283,6 +216,7 @@
 }
 .bg-sejarah {
     width: 100%;
+    height: auto;
     padding: 20px 7%;
     background-color: #F5EFE1;
 }
@@ -290,11 +224,12 @@
     background-color: #62151677;
     width: 100%;
     min-height: 200px;
+    height: auto;
+    min-height: 0;
     color: rgb(0, 0, 0);
     padding: 20px 30px;
     margin: 0px auto;
     border-radius: 25px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -311,6 +246,7 @@
     display: block;
     font-size: 14px;
     width: 100%;
+    max-width: 650px;
     line-height: 1.6;
     letter-spacing: 1px;
     text-align: justify;
@@ -323,120 +259,155 @@
     background-color: black;
     display: block;
     width: 2px;
-    margin-left: -350px;
+    /* margin-left: -350px; */
 }
 .isi-sejarah {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     width: 100%;
     gap: 25px;
 }
 .isi-sejarah img{
-    height: 150px;
-    width: 300px;
+    height: auto;
+    min-height: 0;
+    width: 100%;
+    max-width: 300px;
     object-fit: cover;
     border-radius: 20px;
-}
-.isi-sejarah img{
-    width: 23%;
-}
-.latarFooter {
-    background-color: #621516;
-    height: 280px;
-    width: 100%;
-    margin-top: 0%;
-    color: #ffff;
-}
-
-.topFooter {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 0;
+    align-self: center;
+    justify-self: center;
+}
+/* ===== Tablet & laptop kecil (max 1024px) ===== */
+@media (max-width: 1024px) {
+    .Judul {
+        height: auto;
+        min-height: 250px;
+        padding: 20px 40px;
+    }
+    .Judul h4 {
+        font-size: 28px;
+    }
+    .filosofi-logo,
+    .visi-misi,
+    .sejarahukm-o {
+        padding: 20px;
+    }
+    .isi-filosofi h3,
+    .visi-misi h3,
+    .sejarahukm-o h3 {
+        font-size: 28px;
+    }
+    .hiasan-visimisi {
+        width: 280px;
+    }
+    .garis-visimisi {
+        margin-left: 0;
+    }
 }
 
-.bottomFooter {
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 40px;
+/* ===== Tablet portrait (max 768px) ===== */
+@media (max-width: 768px) {
+    .bg-filosofi,
+    .bg-visimisi,
+    .bg-sejarah {
+        padding: 15px 5%;
+    }
+
+    /* susun jadi satu kolom */
+    .filosofi-logo,
+    .isi-visimisi,
+    .isi-sejarah {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* garis pemisah vertikal tidak dipakai di mode kolom */
+    .garis-filosofi,
+    .garis-visimisi,
+    .garis-sejarah {
+        display: none;
+    }
+
+    .filosofi-logo {
+        min-height: 0;
+    }
+    .filosofi-logo img {
+        width: 50%;
+        max-width: 220px;
+        min-width: 120px;
+        height: auto;
+    }
+    .isi-filosofi {
+        width: 100%;
+    }
+
+    .visi,
+    .misi {
+        width: 100%;
+    }
+
+    .sejarahukm-o p {
+        width: 100%;
+        max-width: 100%;
+    }
+    .isi-sejarah img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hiasan-visimisi {
+        width: 180px;
+        opacity: 0.4; /* supaya tidak menutupi teks */
+    }
+
+    .visi h4,
+    .misi h4 {
+        font-size: 20px;
+    }
 }
 
-.medsos {
-    flex-direction: column;
-    align-content: flex-start;
-    width: 370px;
-    margin-top: 2%;
-    margin-left: 3%;
-}
+/* ===== HP (max 480px) ===== */
+@media (max-width: 480px) {
+    .Judul {
+        padding: 20px;
+    }
+    .Judul h4 {
+        font-size: 22px;
+    }
+    .Judul p {
+        font-size: 11px;
+    }
 
-.row5 {
-    flex-direction: column;
-    align-content: flex-start;
-    list-style: none;
-    text-decoration: none;
-    width: 370px;
-    margin-top: 3%;
-}
+    .filosofi-logo,
+    .visi-misi,
+    .sejarahukm-o {
+        padding: 15px;
+        border-radius: 18px;
+    }
 
-.rigthFooter {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2%;
-    margin-right: 3%;
-    gap: 4px;
-}
+    .isi-filosofi h3,
+    .visi-misi h3,
+    .sejarahukm-o h3 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
 
+    .isi-filosofi li,
+    .isi-filosofi p,
+    .visi p,
+    .misi li,
+    .sejarahukm-o p {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
 
-/* edit text footer */
-.medsos p {
-    font-size: 20px;
-    line-height: 2;
-}
+    .misi li {
+        line-height: 1.4;
+        align-items: flex-start;
+    }
 
-.medsos a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffff;
-    line-height: 2;
-    height: auto;
-}
-
-.row5 a {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1.3;
-    height: auto;
-}
-
-.text15 {
-    text-align: center;
-}
-
-.text16 {
-    font-size:20px;
-    width: 375px;
-    text-align: center;
-}
-
-
-.garis2 {
-    width: 530px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.garis1 {
-    width: 600px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.rigthFooter img{
-    width: 600px;
-    height: auto;
+    .hiasan-visimisi {
+        display: none;
+    }
 }

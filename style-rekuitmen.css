@@ -6,76 +6,6 @@
     font-family: 'montaga';
 }
 
-.navbar {
-    height: 100px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #621516;
-    color: #ffff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-
-.logo-website {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 3%;
-}
-
-.logo-img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    padding: 0;
-    margin: 0;
-}
-
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin-right: 5%;
-    
-}
-
-.ul-class a {
-    text-decoration: none;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.ul-class a.active {
-    background-color: #250203;
-    color: white;
-}
-
-.ul-class a:hover { 
-    background-color: black;
-    color: white;
-}
-
-.li-class {
-    padding: 20px;
-    margin: 5px;
-    margin-right: -10px;
-    
-}
-
-.li-class a {
-    color: #ffff;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 /* edit contain */
 .atas{
     background-color: #250203;
@@ -87,12 +17,10 @@
 
 .title {
     color: #ffff;
-    display: flex;
-    flex-direction: column;
-    max-width: 1440px;
-    height: 310px;
-    align-items: flex-start;
-    columns: 3;
+    height: auto;
+    min-height: 310px;
+    columns: auto;          /* sebelumnya columns: 3, tidak cocok dengan flex */
+    padding: 30px 0;
 }
 
 .tengah {
@@ -103,17 +31,21 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: flex-start;
     margin-left: 5%;
     align-items: flex-end;
     width: auto;
+    max-width: 300px;
 }
 
 .contain {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 5%;
-    row-gap: 100%;
+    gap: 40px;
+    row-gap: 40px;
     align-items:flex-end;
     max-width: 1440px;
 }
@@ -130,8 +62,9 @@
 }
 
 .daftarAlur {
-    min-width: 375px;
-    width: auto;
+    min-width: 0;
+    width: 100%;
+    max-width: 450px;
     height: 88px;
     background-color: #ffff;
     border-radius: 15px;
@@ -141,7 +74,8 @@
 }
 
 .line1, .line3 {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border-top: solid #FFA500 2px;
     align-content: center;
     margin-top: 10%;
@@ -149,6 +83,8 @@
 
 .line2 {
     height: 730px;
+    height: auto;
+    align-self: stretch;
     border-left: solid #FFA500 2px;
     align-content: center;
     margin-bottom: 5%;
@@ -162,12 +98,15 @@
 }
 
 .qr {
-    width:570px ;
-    height:690px ;
+    width:100% ;
+    max-width: 570px;
+    height: auto;
+    padding-bottom: 30px;
     background-color: #ffff;
     border-radius: 20px;
     justify-content: center;
     box-shadow: 0px 7px rgb(181, 178, 171);
+    overflow: hidden;
 }
 
 .alur {
@@ -200,9 +139,9 @@
 
 .text2 {
     font-size: 48px;
-    width:360px ;
-    height:60px ;
-    text-align: center;
+    width:auto ;
+    height:auto ;
+    text-align: left;
     margin-left: 5%;
     font-family: 'poppins';
 }
@@ -266,8 +205,9 @@
 }
 
 .qr h3 {
-    width: 570px;
-    height: 120px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
     font-size: 36px;
     font-weight: bold;
     background-color: #621516;
@@ -279,26 +219,29 @@
 }
 
 .qr img {
-    width:475px ;
-    height:475px ;
-    margin-top: 5%;
-    margin-left: 8.5%;
+    display: block;
+    width: 83%;
+    max-width: 475px;
+    height: auto;
+    aspect-ratio: 1/1;
+    margin: 5% auto 0;
     position: relative;
     z-index: 1;
     object-fit: cover;
 }
 
 .qr h2 {
-    width: 370px;
-    height: 80px;
+    width: 78%;
+    max-width: 370px;
+    height: auto;
+    min-height: 70px;
     background-color: #621516;
     color: #ffff;
     font-weight: bold;
     text-align: center;
     align-content: center;
     border-radius: 50px;
-    margin-left: 17%;
-    margin-top: -5%;
+    margin: -5% auto 0;
     position: relative;
     z-index: 2;
 }
@@ -310,500 +253,134 @@
     object-fit: cover;
 }
 
-/* footer */
-.bawah {
-    background-color: #621516;
-}
-
-.latarFooter {
-    background-color: #621516;
-    height: 280px;
-    max-width: 1440px;
-    margin-top: 10%;
-    color: #ffff;
-}
-
-.topFooter {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 0;
-}
-
-.bottomFooter {
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 40px;
-}
-
-.medsos {
-    flex-direction: column;
-    align-content: flex-start;
-    width: 370px;
-    margin-top: 2%;
-    margin-left: 3%;
-}
-
-.row5 {
-    flex-direction: column;
-    align-content: flex-start;
-    list-style: none;
-    text-decoration: none;
-    width: 370px;
-    margin-top: 3%;
-}
-
-.rigthFooter {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2%;
-    margin-right: 3%;
-    gap: 4px;
-}
-
-
-/* edit text footer */
-.medsos p {
-    font-size: 20px;
-    line-height: 2;
-}
-
-.medsos a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffff;
-    line-height: 2;
-    height: auto;
-}
-
-.row5 a {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1.3;
-    height: auto;
-}
-
-.text15 {
-    text-align: center;
-}
-
-.text16 {
-    font-size:20px;
-    width: 375px;
-    text-align: center;
-}
-
-
-.garis2 {
-    width: 530px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.garis1 {
-    width: 600px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.rigthFooter img{
-    width: 600px;
-    height: auto;
-}
-
-/* ==========================================================
-   MEDIA QUERY - letakkan di paling bawah file CSS
-   ========================================================== */
-
-/* ---------- Tablet landscape / laptop kecil (<= 1024px) ---------- */
-@media (max-width: 1024px) {
-
-    /* navbar */
-    .navbar ul {
-        margin-right: 3%;
-    }
-
-    .li-class {
-        padding: 10px;
-        margin-right: 0;
-    }
-
-    .li-class a {
-        font-size: 14px;
-    }
-
-    /* judul */
-    .title {
-        columns: 1;
-        padding: 0 5%;
-    }
-
-    .row1 {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .row1 p {
-        margin-left: 0;
-    }
-
-    .text2 {
-        font-size: 38px;
-        width: 90%;
-        text-align: left;
-    }
-
-    /* isi utama */
+/* ===== Laptop kecil / tablet landscape (max 1100px) ===== */
+@media (max-width: 1100px) {
     .contain {
-        padding: 0 3%;
-        gap: 20px;
-    }
-
-    .daftarAlur {
-        min-width: 300px;
-    }
-
-    .line1, .line3 {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .line2 {
-        height: 650px;
-    }
-
-    .qr {
-        width: 450px;
-        height: auto;
-        padding-bottom: 30px;
-    }
-
-    .qr h3 {
-        width: 100%;
-        height: 100px;
-        font-size: 28px;
-    }
-
-    .qr img {
-        width: 82%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        margin-left: 9%;
-    }
-
-    .qr h2 {
-        width: 70%;
-        height: 70px;
-        margin-left: 15%;
-        font-size: 20px;
-    }
-
-    .penghubung {
-        height: 500px;
-    }
-
-    /* footer */
-    .medsos,
-    .row5 {
-        width: 30%;
-    }
-
-    .garis1,
-    .garis2 {
-        width: 90%;
-    }
-
-    .rigthFooter img {
-        width: 100%;
-        max-width: 450px;
-    }
-}
-
-/* ---------- Tablet portrait (<= 768px) ---------- */
-@media (max-width: 768px) {
-
-    /* navbar */
-    .navbar {
-        height: 80px;
-    }
-
-    .logo-website {
-        margin-left: 2%;
-        font-size: 14px;
-    }
-
-    .logo-img {
-        width: 55px;
-        height: 55px;
-    }
-
-    .navbar ul {
-        margin-right: 2%;
-    }
-
-    .li-class {
-        padding: 5px;
-        margin: 2px;
-    }
-
-    .li-class a {
-        font-size: 13px;
-    }
-
-    .ul-class a {
-        padding: 3px 6px;
-    }
-
-    /* judul */
-    .title {
-        height: auto;
-        padding: 40px 5%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .row1 {
         justify-content: center;
-        margin-left: 0;
-        width: 100%;
+        padding: 0 20px;
     }
-
-    .row1 p {
-        width: auto;
-    }
-
-    .text1 {
-        margin-left: 0;
-    }
-
-    .text2 {
-        font-size: 32px;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    /* isi utama jadi vertikal */
-    .contain {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 8%;
-        row-gap: 40px;
-    }
-
     .line2 {
+        display: none;           /* garis vertikal tidak cocok kalau kolom turun */
+    }
+    .text2 {
+        font-size: 40px;
+    }
+}
+
+/* ===== Tablet portrait (max 768px) ===== */
+@media (max-width: 768px) {
+    .title {
+        min-height: 240px;
+        padding: 20px 0;
+    }
+    .text2 {
+        font-size: 34px;
+    }
+
+    /* tiga ikon tetap satu baris, garis dekoratif disembunyikan */
+    .row1 {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 8px;
+        margin: 0 3%;
+    }
+    .row1 .line {
         display: none;
     }
-
-    .leftContain {
-        width: 92%;
-        align-items: center;
-    }
-
-    .leftContain h3 {
+    .row1 p {
+        width: 90px;
         margin-left: 0;
-        margin-bottom: 5%;
-        text-align: center;
+        font-size: 11px;
     }
-
-    .alur {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .daftarAlur {
-        min-width: 0;
-        width: 100%;
-        height: auto;
-        min-height: 88px;
-        padding: 10px;
-    }
-
-    .nomor p {
-        margin-left: 0;
-    }
-
-    .penghubung {
-        height: 450px;
-        margin-left: 0;
-    }
-
-    .line1, .line3 {
-        width: 80%;
-        margin-top: 5%;
-    }
-
-    .rigthContain {
-        width: 92%;
-        align-items: center;
-        margin-top: 0;
-    }
-
-    .qr {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        padding-bottom: 30px;
-    }
-
-    /* footer */
-    .latarFooter {
-        height: auto;
-        margin-top: 8%;
-        padding: 30px 0;
-    }
-
-    .topFooter,
-    .bottomFooter {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .medsos,
-    .row5 {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .rigthFooter {
-        margin: 0 auto;
-        align-items: center;
-        width: 90%;
-    }
-
-    .rigthFooter img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .garis1,
-    .garis2 {
-        width: 90%;
-    }
-
-    .text16 {
-        width: 90%;
-    }
-}
-
-/* ---------- Smartphone (<= 480px) ---------- */
-@media (max-width: 480px) {
-
-    /* navbar */
-    .navbar {
+    .row1 img {
+        width: 90px;
         height: 70px;
     }
 
-    .logo-website {
-        font-size: 12px;
-        gap: 5px;
+    /* kolom kiri dan kanan ditumpuk */
+    .contain {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
     }
-
-    .logo-img {
-        width: 45px;
-        height: 45px;
+    .leftContain,
+    .rigthContain {
+        width: 100%;
+        max-width: 570px;
+        padding: 0 5%;
     }
-
-    .navbar ul {
-        margin-right: 1%;
+    .rigthContain {
+        margin-top: 0;
     }
-
-    .li-class {
-        padding: 3px;
-        margin: 0;
+    .line1,
+    .line3 {
+        display: none;
     }
+}
 
-    .li-class a {
-        font-size: 11px;
-    }
-
-    .ul-class a {
-        padding: 2px 5px;
-        border-radius: 8px;
-    }
-
-    /* judul */
+/* ===== HP (max 480px) ===== */
+@media (max-width: 480px) {
     .title {
-        padding: 30px 5%;
+        min-height: 200px;
     }
-
+    .text1 {
+        font-size: 9px;
+    }
     .text2 {
         font-size: 26px;
     }
 
     .row1 img {
-        width: 100px;
-        height: 75px;
+        width: 75px;
+        height: 60px;
+        border-radius: 14px;
     }
-
     .row1 p {
-        font-size: 11px;
+        width: 75px;
+        font-size: 10px;
     }
 
-    /* alur */
     .leftContain h3 {
-        font-size: 18px;
+        font-size: 17px;
     }
-
+    .daftarAlur {
+        height: auto;
+        min-height: 76px;
+        padding: 8px 10px;
+        border-radius: 12px;
+    }
     .daftarAlur li {
         font-size: 16px;
     }
-
     .daftarAlur p {
         font-size: 12px;
     }
+    .penghubung {
+        display: none;
+    }
 
     .nomor p {
-        width: 45px;
-        height: 45px;
+        width: 44px;
+        height: 44px;
         font-size: 18px;
+        margin-left: 0;          /* sebelumnya -60%, bikin lingkaran keluar layar */
     }
-
     .penghubung {
-        height: 380px;
+        height: 400px;
     }
 
-    .alur {
-        gap: 12px;
+    .qr {
+        border-radius: 16px;
     }
-
-    /* qr */
     .qr h3 {
-        height: 80px;
-        font-size: 22px;
+        font-size: 24px;
+        min-height: 80px;
+        border-radius: 16px 16px 0 0;
     }
-
-    .qr img {
-        width: 84%;
-        margin-left: 8%;
-    }
-
     .qr h2 {
-        width: 80%;
-        height: 55px;
         font-size: 16px;
-        margin-left: 10%;
-    }
-
-    /* footer */
-    .medsos p,
-    .medsos a {
-        font-size: 16px;
-    }
-
-    .row5 a {
-        font-size: 14px;
-    }
-
-    .text16 {
-        font-size: 16px;
+        min-height: 56px;
+        border-radius: 40px;
     }
 }

@@ -5,80 +5,6 @@
     padding: 0;
 }
 
-.navbar {
-    min-height: 100px;
-    padding: 10px 0;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #621516;
-    color: #ffff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-
-.logo-website {
-    display: flex;
-    gap: 10px;
-    margin-left: 3%;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.logo-img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin-right: 5%;
-    flex-wrap: wrap;
-    
-}
-
-.ul-class a {
-    text-decoration: none;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.ul-class a.active {
-    background-color: #250203;
-    color: white;
-}
-
-.ul-class a:hover { 
-    background-color: black;
-    color: white;
-}
-
-.li-class {
-    padding: 10px;
-    margin: 5px;
-    margin-right: -10px;
-    
-}
-
-.li-class a {
-    color: #ffff;
-    white-space: nowrap;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-
 .container {
     background: #F5EEE0;
     padding: 0;
@@ -397,182 +323,163 @@
     align-items: center;
     gap: 6px;
 }
-
-.latarFooter {
-    background-color: #621516;
-    min-height: 280px;
-    padding-bottom: 20px;
-    width: 100%;
-    margin-top: 0%;
-    color: #ffff;
-}
-
-.topFooter {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 0;
-}
-
-.bottomFooter {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 40px;
-}
-
-.medsos {
-    flex: 1 1 0;
-    min-width: 0;
-    margin-top: 2%;
-    margin-left: 3%;
-}
-
-.row5 {
-    flex: 1 1 0;
-    min-width: 0;
-    list-style: none;
-    text-decoration: none;
-    margin-top: 3%;
-}
-
-.rigthFooter {
-    display: flex;
-    flex: 2 1 0;
-    min-width: 0;
-    max-width: 600px;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2%;
-    margin-right: 3%;
-    gap: 4px;
-}
-
-
-/* edit text footer */
-.medsos p {
-    font-size: 20px;
-    line-height: 2;
-}
-
-.medsos a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffff;
-    line-height: 2;
-    height: auto;
-}
-
-.row5 a {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1.3;
-    height: auto;
-}
-
-.text15 {
-    text-align: center;
-}
-
-.text16 {
-    font-size: 20px;
-    white-space: nowrap;
-    padding: 0 15px;
-    text-align: center;
-}
-
-
-.garis2 {
-    flex: 1;
-    border-top: 2px solid #F5EFE1;
-    margin-top: 10px;
-}
-
-.garis1 {
-    max-width: 600px;
-    width: 100%;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.rigthFooter img {
-    max-width: 600px;
-    height: auto;
-    width: 100%;
-}
-@media (max-width: 1100px) {
-    .li-class {
-        padding: 6px;
+/* ===== Tablet & laptop kecil (max 1024px) ===== */
+@media (max-width: 1024px) {
+    .Judul {
+        min-height: 250px;
+        padding: 20px 30px;
     }
-
-    .li-class a {
-        font-size: 14px;
-    }
-
-    .logo-img {
-        width: 60px;
-        height: 60px;
-    }
-
     .Judul h4 {
         font-size: 36px;
+        margin-top: 30px;
     }
-
-    .medsos p,
-    .medsos a {
-        font-size: 16px;
-    }
-
-    .row5 a {
-        font-size: 14px;
-    }
-
-    .text16 {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 900px) {
-    .Judul {
-        padding-left: 30px;
+    .Judul p {
+        margin-top: 20px;
     }
 
     .Isi_halaman_KEGIATAN {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 20px 20px 80px;
+    }
+    .baris-isi {
+        gap: 20px;
+    }
+}
+
+/* ===== Tablet portrait (max 768px) ===== */
+@media (max-width: 768px) {
+    .Judul {
+        min-height: 200px;
+        padding: 20px;
+    }
+    .Judul h4 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .Judul p {
+        font-size: 14px;
+        margin-top: 15px;
     }
 
-    .li-class {
-        padding: 4px;
+    .Isi_halaman_KEGIATAN {
+        padding: 15px 15px 60px;
     }
 
-    .li-class a {
-        font-size: 12px;
+    /* kolom jadi satu, tidak lagi bergantung min-width 300px */
+    .baris-isi {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .kolom-kiri,
+    .kolom-kanan {
+        flex: none;
+        width: 100%;
+        min-width: 0;
     }
 
-    .logo-website {
+    .tab-btn {
+        padding: 12px 8px;
         font-size: 13px;
     }
 
-    .medsos p,
-    .medsos a {
-        font-size: 14px;
-    }
-
-    .row5 a {
+    .table1 {
         font-size: 13px;
     }
-
-    .text16 {
-        font-size: 14px;
+    .table1 th,
+    .table1 td {
+        padding: 6px 8px;
     }
 
-    .text15 {
+    .judul-jadwal h3 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}
+
+/* ===== HP (max 480px) ===== */
+@media (max-width: 480px) {
+    .Judul {
+        min-height: 160px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .Judul h4 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .Judul p {
         font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .Isi_halaman_KEGIATAN {
+        padding: 10px 10px 40px;
+    }
+
+    /* tab boleh turun baris kalau judulnya panjang */
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .tab-btn {
+        flex: 1 1 33%;
+        padding: 10px 4px;
+        font-size: 12px;
+    }
+
+    .tab-isi.aktif {
+        padding: 10px;
+        min-height: 200px;
+    }
+
+    .judul-jadwal i {
+        font-size: 22px;
+    }
+    .judul-jadwal h3 {
+        font-size: 16px;
+    }
+
+    .table1 {
+        font-size: 11px;
+        border-spacing: 0 4px;
+    }
+    .table1 th,
+    .table1 td {
+        padding: 5px 6px;
+    }
+
+    .poster-event {
+        padding: 18px;
+        border-radius: 16px;
+    }
+    .poster-event h3 {
+        font-size: 18px;
+    }
+    .poster-event p {
+        font-size: 12px;
+    }
+
+    /* kalender */
+    .kal {
+        padding: 10px;
+    }
+    .kal-grid {
+        gap: 3px;
+    }
+    .kal-hari {
+        font-size: 10px;
+        padding: 4px 0;
+        border-radius: 6px;
+    }
+    .kal-sel {
+        font-size: 12px;
+        padding: 7px 0;
+        border-radius: 6px;
+    }
+    .kal-atas span {
+        font-size: 15px;
+    }
+    .kal-legenda {
+        gap: 12px;
+        font-size: 10px;
+        flex-wrap: wrap;
     }
 }

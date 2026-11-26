@@ -1,91 +1,18 @@
 /* edit header */
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     font-family: 'montaga';
-}
-
-.navbar {
-    height: 100px;
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #621516;
-    color: #ffff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-
-.logo-website {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 3%;
-    font-family: 'Potta One';
-}
-
-.logo-img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    padding: 0;
-    margin: 0;
-}
-
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin-right: 5%;
-    
-}
-
-.ul-class a {
-    text-decoration: none;
-    color: white;
-    padding: 3px 10px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.ul-class a.active {
-    background-color: #250203;
-    color: white;
-}
-
-.ul-class a:hover { 
-    background-color: black;
-    color: white;
-}
-
-.li-class {
-    padding: 20px;
-    margin: 5px;
-    margin-right: -10px;
-    
-}
-
-.li-class a {
-    color: #ffff;
-    font-size: 16px;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* edit contain */
 
 .judul-keanggotaan{
     background-color: #250203;
-    background-color:#250203 ;
     height: 310px;
     width: 100%;
     color: #ffff;
-    display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -96,9 +23,10 @@
     height: 310px;
     max-width: 1440px;
     color: #ffff;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: left;
+    /* margin: 0 auto; */
     padding-top:80px ;
 }
 
@@ -425,111 +353,6 @@
     object-fit: cover;
 }
 
-/* footer */
-
-.bawah {
-    background-color: #621516;
-}
-
-.latarFooter {
-    height: 280px;
-    max-width: 1440px;
-    margin-top: 10%;
-    color: #ffff;
-}
-
-.topFooter {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 0;
-}
-
-.bottomFooter {
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 40px;
-}
-
-.medsos {
-    flex-direction: column;
-    align-content: flex-start;
-    width: 370px;
-    margin-top: 2%;
-    margin-left: 3%;
-}
-
-.row5 {
-    flex-direction: column;
-    align-content: flex-start;
-    list-style: none;
-    text-decoration: none;
-    width: 370px;
-    margin-top: 3%;
-}
-
-.rigthFooter {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-top: 2%;
-    margin-right: 3%;
-    gap: 4px;
-}
-
-
-/* edit text footer */
-.medsos p {
-    font-size: 20px;
-    line-height: 2;
-}
-
-.medsos a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffff;
-    line-height: 2;
-    height: auto;
-}
-
-.row5 a {
-    color: #ffff;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1.3;
-    height: auto;
-}
-
-.text15 {
-    text-align: center;
-}
-
-.text16 {
-    font-size:20px;
-    width: 375px;
-    text-align: center;
-}
-
-
-.garis2 {
-    width: 530px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.garis1 {
-    width: 600px;
-    border-top:2px solid #F5EFE1;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.rigthFooter img{
-    width: 600px;
-    height: auto;
-}
-
 /* ==========================================================
    MEDIA QUERY - letakkan di paling bawah file CSS
    ========================================================== */
@@ -641,21 +464,6 @@
         width: 85%;
     }
 
-    /* footer */
-    .medsos,
-    .row5 {
-        width: 30%;
-    }
-
-    .garis1,
-    .garis2 {
-        width: 90%;
-    }
-
-    .rigthFooter img {
-        width: 100%;
-        max-width: 450px;
-    }
 }
 
 /* ---------- Tablet portrait (<= 768px) ---------- */
@@ -824,46 +632,6 @@
         font-size: 24px;
     }
 
-    /* footer */
-    .latarFooter {
-        height: auto;
-        margin-top: 8%;
-        padding: 30px 0;
-    }
-
-    .topFooter,
-    .bottomFooter {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .medsos,
-    .row5 {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .rigthFooter {
-        margin: 0 auto;
-        align-items: center;
-        width: 90%;
-    }
-
-    .rigthFooter img {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .garis1,
-    .garis2 {
-        width: 90%;
-    }
-
-    .text16 {
-        width: 90%;
-    }
 }
 
 /* ---------- Smartphone (<= 480px) ---------- */
@@ -965,17 +733,4 @@
         width: 92%;
     }
 
-    /* footer */
-    .medsos p,
-    .medsos a {
-        font-size: 16px;
-    }
-
-    .row5 a {
-        font-size: 14px;
-    }
-
-    .text16 {
-        font-size: 16px;
-    }
 }
